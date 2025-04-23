@@ -13,6 +13,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
 
-db. SQLAlchemy(app)
+db = SQLAlchemy(app)
 Migrate = Migrate(app, db)
 Bcrypt = Bcrypt(app)
